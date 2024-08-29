@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class CustomTextFormField extends StatefulWidget {
   final controlller;
   String labelText;
+  int? initialValue;
   CustomTextFormField(
       {required this.controlller, required this.labelText, super.key});
 
@@ -17,6 +18,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextFormField(
+        initialValue: widget.initialValue?.toString(),
         controller: widget.controlller,
         decoration: InputDecoration(
           labelText: widget.labelText,

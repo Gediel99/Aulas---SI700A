@@ -1,12 +1,14 @@
 import 'package:aula4/view/screens/primeira_tela.dart';
 import 'package:aula4/view/screens/segunda_tela.dart';
 import 'package:aula4/view/screens/terceira_tela.dart';
+import 'package:aula4/view/screens/tip.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class MyNavigationDrawer extends StatefulWidget {
-  const MyNavigationDrawer({super.key});
+  MyNavigationDrawer({super.key});
+  Tip tip = Tip();
 
   @override
   State<MyNavigationDrawer> createState() => _MyNavigationDrawerState();
@@ -62,10 +64,12 @@ class _MyNavigationDrawerState extends State<MyNavigationDrawer> {
       ),
       body: IndexedStack(
         index: _currentScreen,
-        children: const [
-          PrimeiraTela(),
-          SegundaTela(),
-          TerceiraTela(),
+        children: [
+          const PrimeiraTela(),
+          SegundaTela(
+            tip: widget.tip,
+          ),
+          const TerceiraTela(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

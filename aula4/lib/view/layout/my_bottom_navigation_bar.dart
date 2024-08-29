@@ -22,7 +22,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
         index: _currentScreen,
         children: const [
           PrimeiraTela(),
-          SegundaTela(),
+          TerceiraTela(),
           TerceiraTela(),
         ],
       ),

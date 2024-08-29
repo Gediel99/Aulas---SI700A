@@ -29,7 +29,7 @@ class _MyTabLayoutState extends State<MyTabLayout> {
             body: const TabBarView(
               children: [
                 PrimeiraTela(),
-                SegundaTela(),
+                TerceiraTela(),
                 TerceiraTela(),
               ],
             )));
