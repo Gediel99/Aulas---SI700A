@@ -32,7 +32,7 @@ class _TerceiraTelaState extends State<TerceiraTela> {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: NetworkImage(
-                    "https://raw.githubusercontent.com/ulissesdias/si700/main/e_forms_intro/assets/images/ulisses.gif",
+                    "https://avatars.githubusercontent.com/u/95309923?s=400&u=a04d3caaab8c82b326b20afc2e73f88a6cf67f0e&v=4",
                   ),
                   fit: BoxFit.cover, // Ajusta a imagem dentro do círculo
                 ),
@@ -44,7 +44,7 @@ class _TerceiraTelaState extends State<TerceiraTela> {
             children: [
               SizedBox(height: 10),
               const Text(
-                "Professor Ulisses Martins Dias",
+                "Gediel Durães de Almeida",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _TerceiraTelaState extends State<TerceiraTela> {
                 height: 10,
               ),
               const Text(
-                "Professor Bonito, Inteligente e Rico",
+                "Desenvolvedor Mobile",
                 style: TextStyle(
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
